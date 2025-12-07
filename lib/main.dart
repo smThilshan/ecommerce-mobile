@@ -1,3 +1,5 @@
+import 'package:ecommerce_mobile/core/configs/theme/app_theme.dart';
+import 'package:ecommerce_mobile/presentation/splash/page/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,11 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: AppTheme.appTheme,
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(),
+      home: SplashScreen(),
     );
   }
 }
